@@ -27,7 +27,9 @@ ReactDOM.render(
           <Route path="/posts/:id" component={PostsShow} />
           <Route path="/users/:id" component={UsersShow} />
           <Route path="/users" component={UsersIndex} />
+          <Route path="/users/:id" component={UsersShow} />
           <Route path="/posts" component={PostsIndex} />
+
           <Route path="/" component={Main} />
 
         </Switch>

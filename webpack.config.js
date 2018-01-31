@@ -21,7 +21,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'),
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: './bundle.js'
   },
   module: {
     loaders: [{
@@ -37,6 +37,8 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new OpenBrowserPlugin({url: 'http://localhost:8080' })
+
+    new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+
   ]
 };
